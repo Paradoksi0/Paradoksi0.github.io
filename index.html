@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reser -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- шрифты -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <!-- стили -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- компоненты -->
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    
+    <link rel="icon" type="image/svg" href="/favicon.svg">
+    <title>Soluxe</title>
+</head>
+<body>
+    <div class="aside">
+        <div class="panel">
+            <div class="header__button-container">
+                <button id="toggleBtn" class="header__button">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+        <header id="header" class="header closed">
+            <div class="header__container">
+                <img class="header__logo" src="./public/img/Logo.svg" alt="Soluxe">
+                <ul class="header__list">
+                    <li><a href="#Title" class="header__item active" data-section="Title">Главная</a></li>
+                    <li><a href="#Service" class="header__item" data-section="About">Услуги</a></li>
+                    <li><a href="#Benef" class="header__item" data-section="Serv">Преимущества</a></li>
+                    <li><a href="#Price" class="header__item" data-section="Port">Прайс-лист</a></li>
+                    <li><a href="#Galary" class="header__item" data-section="Benef">Галерея</a></li>
+                    <li><a href="#Rev" class="header__item" data-section="Cont">Отзывы</a></li>
+                    <li><a href="#Cont" class="header__item" data-section="Cont">Контакты</a></li>
+                </ul>
+                <div class="header__contact">
+                    <img src="./public/icons/geo.svg" alt="Location">
+                    <p>Москва, ул. Фадеева, д. Каруселина</p>
+                </div>
+                <div class="header__footer">
+                    <a href=""><img src="./public/icons/vk-mod.svg" alt="VK"></a>
+                    <a href=""><img src="./public/icons/telegram.svg" alt="Telegramm"></a>
+                    <a href=""><img src="./public/icons/instagram.svg" alt="Instagram"></a>
+                    <a href=""><img src="./public/icons/youtube.svg" alt="Youtube"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main class="main" id="main">
+        <div class="wrapper">
+            <section id="Title" class="section welcome">
+                <div class="container welcome__container">
+                    <div class="welcome__text">
+                        <div class="welcome__title-wrapper">
+                            <h1 class="welcome__title">Soluxe Asian – искусство азиатского спа</h1>
+                            <div class="title-mask"></div>
+                        </div>
+                        <p class="welcome__disc">Погрузитесь в атмосферу безмятежности, где традиции <span>Востока</span> сочетаются с современной <span>роскошью</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- LIBS -->
+    <script src="./assets/js/libs/jquery-3.6.3.min.js"></script>
+    <script src="/assets/js/libs/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
