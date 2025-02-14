@@ -35,6 +35,7 @@ $(document).ready(function () {
     if ($(window).width() > 710) {
         $('#toggleBtn').click(function () {
             $('.wrapper').toggleClass('active');
+            $('.main').toggleClass('active');
             $('#header').toggleClass('active');
             $('.header__button').toggleClass('active');
             if ($('.header__button').hasClass('active')) {
