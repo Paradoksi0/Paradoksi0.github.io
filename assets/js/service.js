@@ -8,6 +8,16 @@ $(document).ready(function(){
         dots: true,
         arrows: true,
         centerMode: true, 
-        centerPadding: "0px"
+        centerPadding: "0px",
+        responsive: [
+            {
+                breakpoint: 768, // Для экранов <768px
+                settings: {
+                    slidesToShow: 1 // Показывать 1 слайд
+                }
+            }
+        ]
     });
+
+   
 });

@@ -9,21 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalSlides = slides.length;
     const slideWidth = slides[0].offsetWidth + 40; // ширина + gap 40px
 
-    // Функция обновления слайдера
+    let startX = 0;
+    let isDragging = false;
+
     function updateSlider() {
         const offset = -currentIndex * slideWidth;
         slider.style.transform = `translateX(${offset}px)`;
-        
-        // Обновление прогресс-бара
-        const progress = ((currentIndex + 1) / totalSlides) * 100;
-        progressBar.style.width = `${progress}%`;
+        progressBar.style.width = `${((currentIndex + 1) / totalSlides) * 100}%`;
 
-        // Блокируем кнопки, если достигнут край
         prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
         nextBtn.style.opacity = currentIndex === totalSlides - 1 ? "0.5" : "1";
     }
 
-    // Кнопка "Влево"
     prevBtn.addEventListener("click", () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -31,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Кнопка "Вправо"
     nextBtn.addEventListener("click", () => {
         if (currentIndex < totalSlides - 1) {
             currentIndex++;
@@ -39,6 +35,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Первоначальное обновление
+    // **Свайп**
+    slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    slider.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        const moveX = e.touches[0].clientX;
+        const diff = startX - moveX;
+
+        if (diff > 50 && currentIndex < totalSlides - 1) {
+            currentIndex++;
+            isDragging = false;
+            updateSlider();
+        } else if (diff < -50 && currentIndex > 0) {
+            currentIndex--;
+            isDragging = false;
+            updateSlider();
+        }
+    });
+
+    slider.addEventListener("touchend", () => {
+        isDragging = false;
+    });
+
     updateSlider();
 });
