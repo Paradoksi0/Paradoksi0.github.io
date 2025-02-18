@@ -1,0 +1,202 @@
+:root {
+    --main-color: #d41f1f;
+    --mod-main-color: #f94949;
+    --sec-color: #A60E0E;
+    --black-main: #101010;
+    --black-main-bg: #161616;
+    --black-main-bg-mod: #1d1d1d;
+    --white-main: #f1f1f1;
+    --white-main-mod: #efefef;
+    --grad-1: #ff512f;
+    --grad-2: #dd2476;
+}
+
+@media screen and (min-width: 1500px) {
+    .footer__container { 
+        height: 100%;
+        width: 100%;
+        padding: 57px 185px 50px 185px;
+        font-family: "KoHo Regular";
+        color: #fff;
+        background: var(--black-main-bg-mod);
+        display: flex;
+        gap: 95px;
+        justify-content: space-between;
+    }
+
+    .footer__disc { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: var(--white-main);
+        letter-spacing: 1px;
+    }
+
+    .footer__disc-info { 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer__links { 
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .footer__link-social { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer__link-social-item { 
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: var(--white-main);
+    }
+
+    .footer__link-logo { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__link-logo h5 { 
+        font-size: 24px;
+        font-family: "IgraSans";
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1499px) {
+    .footer__container { 
+        height: 100%;
+        width: 100%;
+        padding: 57px 60px 50px 60px;
+        font-family: "KoHo Regular";
+        color: #fff;
+        background: var(--black-main-bg-mod);
+        display: flex;
+        gap: 95px;
+        justify-content: space-between;
+    }
+
+    .footer__disc { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: var(--white-main);
+        letter-spacing: 1px;
+    }
+
+    .footer__disc-info { 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer__links { 
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .footer__link-social { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer__link-social-item { 
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: var(--white-main);
+    }
+
+    .footer__link-logo { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__link-logo h5 { 
+        font-size: 24px;
+        font-family: "IgraSans";
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .footer__container { 
+        height: 100%;
+        width: 100%;
+        padding: 57px 60px 50px 60px;
+        font-family: "KoHo Regular";
+        color: #fff;
+        background: var(--black-main-bg-mod);
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
+        justify-content: space-between;
+    }
+
+    .footer__disc { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: var(--white-main);
+        letter-spacing: 1px;
+    }
+
+    .footer__disc-info { 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer__links { 
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .footer__link-social { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer__link-social-item { 
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: var(--white-main);
+    }
+
+    .footer__link-logo { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__link-logo h5 { 
+        font-size: 15px;
+        font-family: "IgraSans";
+    }
+}
