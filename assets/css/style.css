@@ -35,10 +35,7 @@ body {
         transition-delay: 0.1s;
     }
 
-    .wrapper.active { 
-        transform: translate(125px, 0px);
-        
-    }
+    
 
     .section { 
         width: 100%;
@@ -3121,8 +3118,4 @@ body {
         font-family: "Roboto", sans-serif;
         margin-bottom: 10px;
     }
-}
-
-.yButton.bottom.right { 
-    
 }
