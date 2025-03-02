@@ -9,18 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
     yclientsButton.style.opacity = "1";
     yclientsButton.style.visibility = "visible";
 
-    function toggleButtonVisibility() {
-        const titleRect = titleSection.getBoundingClientRect();
-        const isVisible = titleRect.top < window.innerHeight && titleRect.bottom > 0;
-
-        if (isVisible) {
-            yclientsButton.style.opacity = "0";
-            yclientsButton.style.visibility = "hidden";
-        } else {
-            yclientsButton.style.opacity = "1";
-            yclientsButton.style.visibility = "visible";
+    if (window.innerWidth > 768) {
+        function toggleButtonVisibility() {
+            const titleRect = titleSection.getBoundingClientRect();
+            const isVisible = titleRect.top < window.innerHeight && titleRect.bottom > 0;
+    
+            if (isVisible) {
+                yclientsButton.style.opacity = "0";
+                yclientsButton.style.visibility = "hidden";
+            } else {
+                yclientsButton.style.opacity = "1";
+                yclientsButton.style.visibility = "visible";
+            }
         }
-    }
+    } 
+    
 
     // Проверка при загрузке и при скролле
     toggleButtonVisibility();
