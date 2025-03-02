@@ -14,6 +14,11 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
         <!-- reser -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- шрифты -->
@@ -42,7 +47,7 @@
                 <div class="header__container">
                     <img
                         class="header__logo"
-                        src="./public/img/Logo.svg"
+                        src="./logo.svg"
                         alt="Soluxe"
                     />
                     <ul class="header__list " id="nav">
@@ -158,7 +163,7 @@
                 <section id="Title" class="section welcome">
                     <div class="container welcome__container">
                         <div class="welcome__text">
-                            <div class="welcome__title-wrapper">
+                            <!-- <div class="welcome__title-wrapper">
                                 <h1 class="welcome__title">
                                     Soluxe spa - гармония по твоим правилам
                                 </h1>
@@ -168,12 +173,16 @@
                                 Погрузитесь в атмосферу безмятежности, где
                                 традиции <span>Востока</span> сочетаются с
                                 современной <span>роскошью</span>
-                            </p>
+                            </p> -->
                         </div>
-                        <div class="welcome__button">
+                        <video class="welcome__video" autoplay loop muted playsinline>
+                            <source src="./public/video/mob-vid.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <!-- <div class="welcome__button">
                             <a target="_blank" href="https://n1363084.yclients.com"><button>Записаться на приём</button></a>
                             <a href="tel:+89991326888"><button>Позвонить</button></a>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
                 <section id="Service" class="section services">
@@ -1118,6 +1127,33 @@
         <script type="text/javascript" src="https://w1363084.yclients.com/widgetJS" charset="UTF-8"></script>
 
         <!-- LIBS -->
+
+        <style>
+            .yButton.right { 
+                right: 0px !important;
+                top: 50% !important;
+                height: 180px !important;
+                width: 30px !important;
+            }
+
+            .yButtonBackground { 
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 15px 0px 0px 15px !important;
+            }
+
+            .yButtonWave { 
+                display: none;
+            }
+
+            .yButtonText { 
+                writing-mode: vertical-rl; /* Текст вертикально, сверху вниз (справа налево) */
+                text-orientation: mixed; /* Чтобы буквы не были перевёрнуты */
+                transform: rotate(180deg) translateY(-150%); /* Если надо наоборот снизу вверх */
+                white-space: nowrap; /* Чтобы текст не переносился */
+            }
+        </style>
+
         <script src="./assets/js/libs/jquery-3.6.3.min.js"></script>
         <script src="/assets/js/libs/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
