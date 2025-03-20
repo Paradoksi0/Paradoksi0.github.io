@@ -340,7 +340,185 @@ body {
 @media screen and (min-width: 1200px) {
     .experience__container { 
         padding: 200px 30px 120px 30px;
+        flex-direction: row;
+        gap: 40px;
     }
 
-    
+    .experience__wrapper { 
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        max-width: calc(100vw / 1.6991);
+    }
+
+    .experience__title-wrapper { 
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 396px;
+        background: #6E6E6E;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .experience__title-img { 
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .experience__title-wrapper h2 { 
+        font-size: 40px;
+        font-weight: 700;
+        color: #EBEBEB;
+        
+    }
+
+    .experience__title-disc { 
+        font-size: 21px;
+        font-weight: 400;
+        color: #E0E0E0;
+        max-width: 880px;
+
+    }
+
+    .experience__title-disc span { 
+        color: #F0C693;
+        font-weight: 600;
+    }
+
+    .experience__house { 
+        background: #B2B2B2;
+        height: 414px;
+        width: 100%;
+        position: relative;
+    }
+
+    .experience__house-image { 
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .experience__house-image img { 
+        width: 100%;
+    }
+
+    .experience__block { 
+        width: 100%;
+        max-width: calc(100vw / 2.8276);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .experience__block-title { 
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 396px;
+        position: relative;
+    }
+
+    .experience__block-text { 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .experience__block-text h3 { 
+        font-size: 28px;
+        color: #0d0d0d;
+        font-weight: 700;
+        font-family: "Raleway";
+    }
+
+    .experience__block-text p  { 
+        font-size: 19px;
+        font-weight: 400;
+        max-width: 560px;
+        color: #343434;
+    }
+
+    .experience__block-text span { 
+        font-weight: 600;
+        color: #F0C693;
+    }
+
+    .experience__button { 
+        color: #fff;
+        background: #F0C693;
+        width: 209px;
+        height: 53px;
+        transform: translateX(10px);
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    /* ----------------------------------------------- */
+
+    .block__corner-1, .block__corner-2,
+    .block__corner-3, .block__corner-4 { 
+        position: absolute;
+        border: 1px solid #DCDCDC;
+        width: 60px;
+        height: 60px;
+        z-index: 9;
+    }
+
+    .block__corner-1 { 
+        border-bottom: none;
+        border-right: none;
+        top: 0px;
+        left: 0px;
+    }
+
+    .block__corner-2 { 
+        border-left: none;
+        border-bottom: none;
+        top: 0px;
+        right: 0px;
+    }
+
+    .block__corner-3 { 
+        border-top: none;
+        border-left: none;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .block__corner-4 { 
+        border-right: none;
+        border-top: none;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    /* ------------------------------------------------------- */
+
+    .experience__block-image { 
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 50;
+
+    }
+
+    .experience__block-footer { 
+        height: 100%;
+        max-height: 414px;
+    }
+
+    .experience__block-footer img { 
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
