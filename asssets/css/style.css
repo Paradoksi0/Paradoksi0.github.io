@@ -1,0 +1,187 @@
+:root { 
+    --main-color: #F0C693;
+    --border-color: #484848;
+}
+
+body { 
+    overflow-x: hidden;
+    background: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 1️⃣ GENERAL */
+
+@media screen and (min-width: 1200px) {
+    .main { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corner__button { 
+        position: relative;
+    }
+
+    .button__corner-1 { 
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--border-color);
+        border-right: none;
+        border-bottom: none;
+        top: -9px;
+        left: -9px;
+    }
+
+    .button__corner-2 { 
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--border-color);
+        border-left: none;
+        border-bottom: none;
+        top: -9px;
+        right: -9px;
+    }
+
+    .button__corner-3 { 
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--border-color);
+        border-top: none;
+        border-left: none;
+        bottom: -9px;
+        right: -9px;
+    }
+
+    .button__corner-4 { 
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid var(--border-color);
+        border-right: none;
+        border-top: none;
+        bottom: -9px;
+        left: -9px;
+    }
+
+    
+}
+
+/* 2️⃣ HEADER */
+
+@media screen and (min-width: 1200px) {
+    .header { 
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        z-index: 999;
+        height: 75px;
+
+    }
+
+    .header__container { 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 65px;
+        padding: 0px 45px;
+        height: 100%;
+    }
+
+    .header__list { 
+        display: flex;
+        gap: calc(100vw / 19.2);
+        align-items: center;
+    }
+
+    .header__list li a { 
+        color: #fff;
+        font-family: "Inter";
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    .header__devider { 
+        width: 1px;
+        height: 40px;
+        background-color: #fff;
+
+    }
+
+    .header__links { 
+        display: flex;
+        gap: calc(100vw / 42);
+        align-items: center;
+    }
+}
+
+
+
+/* 3️⃣ WELCOME */
+@media screen and (min-width: 1200px) {
+    .welcome__container { 
+        height: calc(834px);
+        width: 100%;
+        background-image: url('../../public/img/welcome.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 130px 0px 0px 140px;
+    }
+
+    .welcome__container h1 { 
+        font-size: 65px;
+        color: #000;
+        font-family: "Raleway";
+        font-weight: 700;
+    }
+
+    .welcome__subtitle { 
+        font-size:  21px;
+        color: #141414;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .welcome__buttons { 
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .welcome__button-type1 { 
+        position: relative;
+        font-size: 21px;
+        font-weight: 500;
+        font-family: "Raleway";
+        padding: 14px 25px;
+        background: var(--main-color);
+        color: #fff;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    }
+
+    .welcome__button-type2 { 
+        position: relative;
+        font-size: 21px;
+        font-weight: 500;
+        font-family: "Raleway";
+        padding: 14px 25px;
+        background: #3B3B3B;
+        color: #fff;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    }
+}

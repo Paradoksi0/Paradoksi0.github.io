@@ -1,0 +1,59 @@
+/* RALEWAY */
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../../public/fonts/Raleway/static/Raleway-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../../public/fonts/Raleway/static/Raleway-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../../public/fonts/Raleway/static/Raleway-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../../public/fonts/Raleway/static/Raleway-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../../public/fonts/Raleway/static/Raleway-Light.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Railway";
+    src: url('../../public/fonts/Raleway/static/Raleway-Italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* INTER */
+
+@font-face {
+    font-family: "Inter";
+    src: url('../../public/fonts/Inter/static/Inter_18pt-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('../../public/fonts/Inter/static/Inter_18pt-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
