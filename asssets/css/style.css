@@ -28,6 +28,17 @@ body {
         position: relative;
     }
 
+    .corner__button:hover {
+        transform: scale(1.01); 
+    }
+
+    .button__corner-1,
+    .button__corner-2,
+    .button__corner-3,
+    .button__corner-4 { 
+        transition: all 0.3s ease; 
+    }
+
     .button__corner-1 { 
         position: absolute;
         width: 15px;
@@ -72,7 +83,70 @@ body {
         left: -9px;
     }
 
+    .corner__button:hover .button__corner-1 {
+        animation: corner-bounce-1 0.4s ease forwards;
+    }
     
+    .corner__button:hover .button__corner-2 {
+        animation: corner-bounce-2 0.4s ease forwards;
+    }
+    
+    .corner__button:hover .button__corner-3 {
+        animation: corner-bounce-3 0.4s ease forwards;
+    }
+    
+    .corner__button:hover .button__corner-4 {
+        animation: corner-bounce-4 0.4s ease forwards;
+    }
+    
+    /* Анимации для каждого уголка */
+    @keyframes corner-bounce-1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(-5px, -5px); /* Влево вверх */
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    @keyframes corner-bounce-2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(5px, -5px); /* Вправо вверх */
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    @keyframes corner-bounce-3 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(5px, 5px); /* Вправо вниз */
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    @keyframes corner-bounce-4 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(-5px, 5px); /* Влево вниз */
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
 }
 
 /* 2️⃣ HEADER */
@@ -109,6 +183,29 @@ body {
         font-family: "Inter";
         font-size: 21px;
         font-weight: 800;
+        transition: all ease 0.3s;
+        position: relative;
+    }
+
+    .header__list li a:hover { 
+        color: var(--main-color);
+    }
+
+    .header__list li a::after { 
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: -2px;
+        height: 1px;
+        width: calc(100% + 4px);
+        width: 0px;
+        background: var(--main-color);
+        z-index: 999;
+        transition: all ease 0.3s;
+    }
+
+    .header__list li a:hover::after { 
+        width: calc(100% + 4px);
     }
 
     .header__devider { 
@@ -138,6 +235,7 @@ body {
         background-repeat: no-repeat;
         position: relative;
         padding: 130px 0px 0px 140px;
+        margin: 0px 0px 266px 0px;
     }
 
     .welcome__container h1 { 
@@ -184,4 +282,65 @@ body {
         border: none;
         cursor: pointer;
     }
+
+    .welcome__footer { 
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 266px;
+        transform: translateY(100%);
+        background: #565656;
+        padding: 0px calc(100vw / 38.4);
+        display: flex;
+        gap: calc(100vw / 16);
+        align-items: center;
+    }
+
+    .welcome__footer-item { 
+        display: flex;
+        gap: 15px;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .welcome__footer-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: calc(-100vw / 32); 
+        top: 50%;
+        transform: translateY(-50%);
+        height: 90px;
+        width: 1px;
+        background-color: #DADADA;
+    }
+
+    .welcome__footer-item p { 
+        position: relative;
+        color: #DADADA;
+        font-size: calc(100vw / 80);
+        font-weight: 600;
+        padding: 0px 0px 10px 0px;
+        text-wrap: nowrap;
+    }
+
+    .welcome__footer-item p::after { 
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: 0px;
+        height: 2px;
+        width: 24px;
+        background: #F0C693;
+    }
+}
+
+/*  4️⃣ EXPIRIENCE  */
+
+@media screen and (min-width: 1200px) {
+    .experience__container { 
+        padding: 200px 30px 120px 30px;
+    }
+
+    
 }
