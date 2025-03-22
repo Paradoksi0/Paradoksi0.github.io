@@ -16,6 +16,13 @@
 
 @font-face {
     font-family: "Raleway";
+    src: url('../../public/fonts/Raleway/static/Raleway-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Raleway";
     src: url('../../public/fonts/Raleway/static/Raleway-Medium.ttf');
     font-style: normal;
     font-weight: 500;
@@ -56,4 +63,13 @@
     src: url('../../public/fonts/Inter/static/Inter_18pt-ExtraBold.ttf');
     font-style: normal;
     font-weight: 800;
+}
+
+/* CRIMSON TEXT */
+
+@font-face {
+    font-family: "Crimson";
+    src: url('../../public/fonts/Crimson_Text/CrimsonText-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
 }
