@@ -1391,6 +1391,10 @@ body {
 /* 5️⃣ ABOUT */
 
 @media screen and (min-width: 1200px) {
+    .about { 
+        overflow: hidden;
+    }
+    
     .about__container { 
         padding: 0px 0px 0px 30px;
         flex-direction: row;
@@ -1452,7 +1456,6 @@ body {
 
     .about__block-disc-1-text { 
         height: 100%;
-        max-height: calc(100vw / 5.36312);
         padding: calc(100vw / 27.826) calc(100vw / 22.5882) calc(100vw / 28.2352) calc(100vw / 27.8260);
     }
 
@@ -1513,10 +1516,15 @@ body {
 
     .about__block-footer-disc { 
         font-size: 21px;
+        font-size: calc(100vw / 91.4285);
         padding: 0px 0px 0px 15px;
         color: #616161;
         padding: 15px 0px 0px 15px;
         max-width: calc(100vw / 4.7642);
+    }
+
+    .about__block-footer img { 
+        max-width: calc(100vw / 5.0393);
     }
 
 
@@ -2891,7 +2899,7 @@ body {
 
 /* 1️⃣1️⃣ CONTACT */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .contact__container { 
         padding: 80px calc(100vw / 12.549) 0px 90px;
         background-color: #131313;
@@ -3149,7 +3157,269 @@ body {
     }
 }
 
-@media screen and  ( min-width: 300px) and (max-width: 1199px) {
+@media screen and (max-width: 1399px) and (min-width: 1000px) {
+    .contact__container { 
+        padding: 80px calc(100vw / 12.549) 0px 90px;
+        background-color: #131313;
+        border: 1px solid #585858;
+    }
+
+    .contact__wrapper { 
+        display: flex;
+        flex-direction: column-reverse;
+        
+        gap: 180px;
+        margin-bottom: 100px;
+    }
+
+    .contact__container h4  { 
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .contact__subtitle { 
+        color: #8B8B8B;
+        margin-top: 10px;
+        font-size: 19px;
+        font-weight: 400;
+        max-width: calc(100vw / 3.1067);
+    }
+
+    .contact__subtitle span { 
+        color: #ECECEC;
+        font-weight: 500;
+    }
+
+    .contact__info-wrapper { 
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact__links-wrapper { 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 125px;
+        gap: 180px;
+    }
+
+    .contact__links-block { 
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        position: relative;
+    }
+
+    .contact__links-block::after { 
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        top: 0px;
+        right: -90px;
+        background-color: #2A2A2A;
+    }
+
+    .contact__links-item { 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact__links-item-title { 
+        font-size: 28px;
+        font-family: "Inter";
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .contact__links-list { 
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+    }
+
+    .contact__links-list-item { 
+        position: relative;
+        font-size: 21px;
+        font-weight: 300;
+        color: #8B8B8B;
+
+    }
+
+    .contact__links-list-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: -15px;
+        height: 100%;
+        width: 1px;
+        background-color: #8B8B8B;
+    }
+
+    .contact__links-address { 
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact__links-address-item { 
+        margin-bottom: 24px;
+        font-size: 21px;
+        font-weight: 300;
+        color: #8B8B8B;
+
+    }
+
+    .contact__form-wrapper { 
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 500px;
+        
+    }
+
+    .contact__form-list { 
+        display: flex;
+        gap: 50px;
+
+    }
+
+    .contact__form-item  { 
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    .contact__form-item-title { 
+        font-family: "Raleway";
+        font-size: 21px;
+        font-weight: 400;
+        color: #8A8A8A;
+    }
+
+    .contact__form-input-wrapper { 
+        position: relative;
+    }
+
+    .contact__form-input { 
+        padding: 5px 10px;
+        background-color: #EEBC7F;
+        position: relative;
+        height: 53px;
+        font-size: 21px;
+        font-family: "Raleway";
+        font-weight: 500;
+        color: #000;
+        width: 100%;
+    }
+
+    /* segsepgosepgojsekgposejgposejgpoejgpoegjepojg */
+
+    .contact__input-line-1 { 
+        position: absolute;
+        top: -9px;
+        left: -9px;
+        border-top: 1px solid #585858;
+        border-left: 1px solid #585858;
+        width: 15px;
+        height: 15px;
+    }
+
+    .contact__input-line-2 { 
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        border-top: 1px solid #585858;
+        border-right: 1px solid #585858;
+        width: 15px;
+        height: 15px;
+    }
+
+    .contact__input-line-3 { 
+        position: absolute;
+        bottom: -9px;
+        right: -9px;
+        border-bottom: 1px solid #585858;
+        border-right: 1px solid #585858;
+        width: 15px;
+        height: 15px;
+    }
+
+    .contact__input-line-4 { 
+        position: absolute;
+        bottom: -9px;
+        left: -9px;
+        border-bottom: 1px solid #585858;
+        border-left: 1px solid #585858;
+        width: 15px;
+        height: 15px;
+    }
+
+    .contact__form-button { 
+        width: 100%;
+        height: 53px;
+        background-color: #C0C0C0;
+        border: 1px solid #000000;
+        position: relative;
+        font-size: 21px;
+        margin-top: 21px;
+
+        font-weight: 700;
+    }
+
+    .contact__form-button::before { 
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background-image: repeating-linear-gradient(
+            to right,
+            #333333,
+            #333333 12px,
+            transparent 12px,
+            transparent 24px
+        );
+    }
+
+    /* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER */
+    .footer { 
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 30px 0px ;
+        position: relative;
+
+    }
+
+    .footer::before { 
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #2A2A2A;
+        top: 0px;
+        left: 0px;
+    }
+
+    .footer p { 
+        font-family: "Raleway";
+        color: #989898;
+    }
+
+    .footer a { 
+        color: #989898;
+        text-decoration: underline;
+    }
+}
+
+@media screen and  ( min-width: 300px) and (max-width: 999px) {
     .contact__container { 
         padding: 80px 30px 0px 30px;
         background-color: #131313;
