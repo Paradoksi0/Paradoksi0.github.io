@@ -678,11 +678,11 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        height: 396px;
-        background: #6E6E6E;
+        height: 849px;
+        
         width: 100%;
         position: relative;
-
+        background-image: url('../../public/img/sec-1.png');
     }
 
     .experience__title-img { 
